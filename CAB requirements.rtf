@@ -1,0 +1,217 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\f0\fs52\lang9 CAB SERVICE MANAGEMENT\par
+
+\pard\sa200\sl276\slmult1\fs48 INTRODUCTION\par
+\ulnone\fs28 Cab management software was created to provide an excellent customer experience and streamline all cab-related operations including taxi booking, auto fare calculation, invoice generation, and payment administration. A cab management software solution streamlines the taxicab business management processes and improves the overall experience of users.\par
+The primary requirement of every taxi business owner is to provide a stream lined cab booking solution and manage their fleet of cars through their mobile or tablets. By leveraging GPS and other latest technologies, your taxi business can be incredibly boosted.\par
+Cab Management System is a great way to get your taxi business of the ground and run it successfully. Having cab management software is useful in all aspects of the taxi industry in today\rquote s competitive market. The system not only helps save time when booking and dispatching taxis but also helps in attracting taxi customers as well developing your business.\par
+\ul\fs48 PURPOSE\par
+\ulnone\fs28 Aim of this software specification requirements document is to provide a complete description of all of the features that are planned to implement to system . It also describes how the system operates and how users interact with the application. Besides external systems and interfaces which the application depends, are specified in this SRS document.The potential audiences for this document are design and development team of the Project in order to specify software designs. Test team utilizes this software specification requirements document to define test scenarios according to the mentioned requirements. Besides project manager, quality manager and acquirer use this SRS document for reviewing purposes.\par
+\ul\fs48 SCOPE\par
+\ulnone\fs32  Our project is going to be a web portal. It is going to provide communication environment for users and drivers. Every user has their own profiles and they can have access with given password to the system. The drivers can draw their routes from map in our web site. At the end, users can assess each other via feedback system.\par
+The system will bring many advantages. For instance, the drivers and users spend less money on traffic. Moreover, traffic jam and air pollution will be decreased. And everyone benefits from these advantages.\par
+\ul\fs48 OVERVIEW\ulnone\fs32\par
+The rest of the document contains overall description of the system, it contains system specific requirements which composed of functional and  non\'02functional requirements. \par
+\ul\fs48 OVERALL DESCRIPTION\ulnone\fs32\par
+This section gives background information about specific requirements of the web based  system to be developed in brief. Although we will not describe every requirement in detail, this section will describe the factors that affect the final product.\par
+\ul\fs40 ACTORS\ulnone\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs32 Admin\fs22\par
+{\pntext\f1\'B7\tab}\fs32 User\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Finance\fs22\par
+{\pntext\f1\'B7\tab}\fs32 Driver\fs22\par
+
+\pard\sa200\sl276\slmult1\ul\fs40 REQUIREMENTS\par
+\ulnone\fs32 The homepage contain a login button,sign in button and a sign out button.\ul\fs40\par
+\fs36 LOGIN\fs40\par
+\ulnone\fs32  \i Select who is the actor(User, Admin, Finance, Driver)\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i0 Click the \b login \b0 button.\i\par
+
+\pard\sa200\sl276\slmult1\i0 The actor should  provide the following details for login:-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Email:- The email must be a valid one. The email should have a proper format. Otherwise it will display a message that , it is required to fill the email in a proper format with '@'.\par
+{\pntext\f1\'B7\tab}Password :-It should be an password input type.The password must be minimum 6 digits and contain atleast one special character , lower case or uppercase, or any number. If the password not contain any of the conditions, the field must say that it is important to have such conditions for strong password. If the actor forgot the password, he/she get the account information via the "forgot your password"  panel .\par
+{\pntext\f1\'B7\tab}OTP:- An OTP will be provided on the actor's email or contact number for the validation.\par
+{\pntext\f1\'B7\tab} Click on the \b submit \b0 button:- The button will redirect to the actor's main page.\tab\par
+
+\pard\sa200\sl276\slmult1     \ul\fs32 RESET PASSWORD\fs28\par
+\ulnone        The user can reset the password here.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Email or phone number:- The user should enter a valid email or contact number.\par
+{\pntext\f1\'B7\tab}An link will be sent to the valid email or contact number.\par
+{\pntext\f1\'B7\tab}The link will redirect to the password resetting page. There the user can reset the password by entering and confirm the password. Then clicking on the done button will redirect to the login page.\par
+
+\pard\sa200\sl276\slmult1\ul\fs36 USER SIGN IN\ulnone\fs28\par
+
+\pard\sa200\sl276\slmult1\qj\fs32 The user have to sign in, when he/she is entering first time to the webpage\fs28 . \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Click on \b sign in \b0 button.\par
+
+\pard\sa200\sl276\slmult1\qj The user have to provide the following details for the registration:-   \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  Name :- The name should contain minimum 3 to maximum of 25 numbers of character. It should be marked as a mandatory field.  . The name field can be seperated for first name and the last name. \fs24\par
+
+\pard\sa200\sl276\slmult1\qj\fs28                                            (1)First name:- The field is mandatory. The user should have to fill it. Otherwise it will shown an error message.\par
+                                         (2)Middle Name(if any):-The field is not mandatory.\par
+ \tab\tab\tab        (3)Last name: - This field is not mandatory. \fs24\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs28  Location:- This field is mandatory. There shown an error warning message , if it is not filled.  This field can also be further seperated to  place (where the user is currently resided), pincode etc. And those fields also can be mandatory. \fs24\par
+
+\pard\sa200\sl276\slmult1\fs28                               The pincode field must contain 6 characters. The field should show an warning message if the field is not filled by numbers.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  Gender:- This field is mandatory. This should contain an drop down menu to select.\par
+{\pntext\f1\'B7\tab}Contact Number:- The user have to provide their valid contact number for the validation of their account.\par
+{\pntext\f1\'B7\tab}Email:- It is mandatory field. Email must be valid one. And it is further used as username for the login.\par
+{\pntext\f1\'B7\tab}Password:-It is mandatory field. The user should have to create a new password.  It should contain atleast 6 characters with some special characters, lowercase or uppercase, numbers etc. Then confirm the password by re enter it. It is also a mandatory one.\par
+{\pntext\f1\'B7\tab} Click on \b Sign in \b0 button:- It will redirect to the user's main page.\fs24\par
+
+\pard\sa200\sl276\slmult1\tab\par
+\ul\fs36 ADMIN SIGN IN\ulnone\fs28\par
+
+\pard\sa200\sl276\slmult1\qj\fs32 The admin have to register, when he/she is entering first time to the webpage\fs28 . \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Click on \b sign in \b0 button.\par
+
+\pard\sa200\sl276\slmult1\qj The admin have to provide the following details for the registration:-   \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  Name :- The name should contain minimum 3 to maximum of 25 numbers of character. It should be marked as a mandatory field.  . The name field can be seperated for first name and the last name. \fs24\par
+
+\pard\sa200\sl276\slmult1\qj\fs28                                            (1)First name:- The field is mandatory. The admin should have to fill it. Otherwise it will shown an error message.\par
+\tab\tab\tab          (2)Middle Name(if any):-The field is not mandatory.\par
+ \tab\tab\tab          (3)Last name: - This field is not mandatory.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Contact Number:- The admin  have to provide their valid contact number for the validation of their account.\par
+{\pntext\f1\'B7\tab}Email:- It is mandatory field. Email must be valid one. And it is further used as username for the login.\par
+{\pntext\f1\'B7\tab}Password:-It is mandatory field. The admin should have to create a new password.  It should contain atleast 6 characters with some special characters, lowercase or uppercase, numbers etc. Then confirm the password by re enter it. It is also a mandatory one.\par
+{\pntext\f1\'B7\tab} Click on \b Sign in \b0 button:- It will redirect to the actor's main page.\fs24\par
+
+\pard\sa200\sl276\slmult1\ul\fs36 FINANCIER SIGN IN\ulnone\fs28\par
+
+\pard\sa200\sl276\slmult1\qj\fs32 The financier have to register, when he/she is entering first time to the webpage\fs28 . \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Click on \b sign in \b0 button.\par
+
+\pard\sa200\sl276\slmult1\qj The financier have to provide the following details for the registration:-   \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  Name :- The name should contain minimum 3 to maximum of 25 numbers of character. It should be marked as a mandatory field.  . The name field can be seperated for first name and the last name. \fs24\par
+
+\pard\sa200\sl276\slmult1\qj\fs28                                            (1)First name:- The field is mandatory. The financier should have to fill it. Otherwise it will shown an error message.\par
+\tab\tab\tab         (2)Middle Name(if any):-The field is not mandatory.\par
+ \tab\tab\tab         (3)Last name: - This field is not mandatory.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Contact Number:- The financier  have to provide their valid contact number for the validation of their account.\par
+{\pntext\f1\'B7\tab}Email:- It is mandatory field. Email must be valid one. And it is further used as username for the login.\par
+{\pntext\f1\'B7\tab}Password:-It is mandatory field. The financier should have to create a new password.  It should contain atleast 6 characters with some special characters, lowercase or uppercase, numbers etc. Then confirm the password by re enter it. It is also a mandatory one.\par
+{\pntext\f1\'B7\tab} Click on \b Sign in \b0 button:- It will redirect to the financier's main page.\fs24\par
+
+\pard\sa200\sl276\slmult1\ul\fs36 DRIVER SIGN IN\ulnone\fs28\par
+
+\pard\sa200\sl276\slmult1\qj\fs32 The driver have to register, when he/she is entering first time to the webpage\fs28 . \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Click on \b sign in \b0 button.\par
+
+\pard\sa200\sl276\slmult1\qj The admin have to provide the following details for the registration:-   \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  Name :- The name should contain minimum 3 to maximum of 25 numbers of character. It should be marked as a mandatory field.  . The name field can be seperated for first name and the last name. \fs24\par
+
+\pard\sa200\sl276\slmult1\qj\fs28                                            (1)First name:- The field is mandatory. The driver should have to fill it. Otherwise it will shown an error message.\par
+\tab\tab\tab          (2)Middle Name(if any):-The field is not mandatory.\par
+ \tab\tab\tab          (3)Last name: - This field is not mandatory.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Contact Number:- The driver  have to provide their valid contact number for the validation of their account.\par
+{\pntext\f1\'B7\tab}Email:- It is mandatory field. Email must be valid one. And it is further used as username for the login.\par
+{\pntext\f1\'B7\tab}Password:-It is mandatory field. The driver should have to create a new password.  It should contain atleast 6 characters with some special characters, lowercase or uppercase, numbers etc. Then confirm the password by re enter it. It is also a mandatory one.\par
+{\pntext\f1\'B7\tab} Click on \b Sign in \b0 button:- It will redirect to the driver's main page.\fs24\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\ul\fs36 SIGN OUT\ulnone\fs24\par
+\fs28 The actor need to log in to the page first.\par
+The actor will be redirected to the home page by clicking the sign out button.\par
+\par
+\fs40 ADMIN PAGE\par
+\fs28 After the admin's  login, he will be directed to this page. Here, he will see the following:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Passenger details:-He can see the user login info ,activity of the user(booking, payment, cancellation).\ul\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\fs28 Driver details:- He can see the details of the driver. \ul\fs36\par
+
+\pard\sa200\sl276\slmult1\par
+\ulnone\fs40 DRIVER PAGE\par
+\fs28 After the driver's  login, he will be directed to this page. Here, he will see the following:\ul\fs40\par
+\ulnone\fs28 He can see the passenger detail, pickup location and destination of the passenger, cab number passenger booked. \par
+\ul\fs36 REQUEST PAGE\par
+\ulnone\fs28 The driver get the request message from the user to accept their request of booking the driver's cab.\par
+If the driver accept the request, the user can prooceed with the payment. Otherwise user wants to select another cab.\par
+\par
+\fs40 FINANCER'S PAGE\par
+\fs28 After the financer's  login, he will be directed to this page.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  Here, he want to register the details of their financial account(like their bank name,  address of the bank, ifsc code,  etc.)\par
+{\pntext\f1\'B7\tab} After submitting it they could see the payment and the  transaction details of the user. Thus they can calculate their daily income. \par
+{\pntext\f1\'B7\tab}The refund process requested by the users are also initiated and processed by them.\par
+
+\pard\sa200\sl276\slmult1\fs40 USER PAGE\par
+\fs28 After user's login , they will direct to this page. Here they can do the following:\par
+\ul\fs36 SEARCHING FOR CAB\par
+\ulnone\fs28 The user need to login to the page.\par
+The user can search for the available cabs according to their location. For that, they need to enter the pickup location and destination.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Pickup location:-The user should enter their current /pickup location. This field is mandatory. A warning message will be shown if the user don't enter the location.\par
+{\pntext\f1\'B7\tab}Destination:- The user should enter their destination.This field is mandatory. A warning message will be displayed if the user doesn't  enter the location. \par
+
+\pard\sa200\sl276\slmult1 Then , the list of cabs are displayed according to the user's  need. They can select the proper cab as their need. There they get the details of the cab (vehicle number), name of the driver ,current location of the cab(whether it is near or far)\par
+\ul\fs36 BOOKING THE CAB\ulnone\fs28\par
+The user can select the cab.\par
+First the user need to enter the following passenger details :\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Name:- Name of passenger should be enter. It is a mandatory field.\par
+{\pntext\f1\'B7\tab}Email:- Valid email of the passenger. It is a mandatory field. If it is not filled according to the condition, then an warning message will be seen.\par
+{\pntext\f1\'B7\tab}Contact number:- The valid contact number should be provide for further tracking of cab.\par
+{\pntext\f1\'B7\tab}Click on \b submit\b0  button will  redirect to payment page.\par
+
+\pard\sa200\sl276\slmult1\ul\fs36 PAYMENT\par
+\ulnone\fs28 The user can make his payment here. The user need to select from drop down list what type of payment have to done( UPI, net banking, credit /debit card)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 UPI method:-The user need to select which UPI method they want to use. It will redirect to that UPI payment page or app.\par
+{\pntext\f1\'B7\tab}Net Banking:- By selecting it, it will redirect to the net banking page of the user's bank.\par
+{\pntext\f1\'B7\tab}Credit / Debit card:- By selecting this, it will take to the next page for filling about the details of the card. All fields are mandatory.\par
+
+\pard\sa200\sl276\slmult1                           (i)Account Holder's name:-The user need to enter the account holder's name correctly.\par
+                      (ii)Card number:-The user need to enter the card's number.\par
+                       (iii)  Year of expiry\tab :- Enter the expiry year of the card.\par
+\tab\tab   (iv)CVV:-Enter the 3 digit CVV number of the card .\par
+Click the \b submit\b0  button. An invoice will be generated.\par
+\ul\fs36 INVOICE\fs28\par
+\ulnone An invoice will be generated after successful payment. In it , the following details will be seen:-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 OTP need to given to the driver before starting the ride.\par
+{\pntext\f1\'B7\tab}Driver's photo ,his licence number and contact number.\par
+{\pntext\f1\'B7\tab}Cab's registration number and documents\par
+{\pntext\f1\'B7\tab}Number of passengers\par
+{\pntext\f1\'B7\tab}Time of arrival ( it may vary)\par
+{\pntext\f1\'B7\tab}Can track the cab's status.\par
+
+\pard\sa200\sl276\slmult1 Then the user can click on the \b done \b0 button.It will redirect user to the main page.\par
+The user can also cancel the booking by click on \b cancel booking\b0 .\par
+\ul\fs36 CANCEL BOOKING\ulnone\fs28  \par
+The user can cancel the booking after or before the payment . \par
+When the user click the cancel button, it will redirect to the cancellation page.\par
+At the cancellation page, the user need to fill the field from the drop down list, why he was cancelling the booking. Then user can select the refund option and can choose the way he wanted to get back the refund.\par
+Here also an \b invoice\b0  will be generated consisting the message of cancellation and details of the refund.\par
+\ul\fs36 RATE THE APP\par
+\ulnone\fs28 The user can rate the app.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Feedback:- The user can write a feedback of the ride,cab, and driver.\ul\fs36\par
+{\pntext\f1\'B7\tab}\ulnone\fs28 Rating: The user can rate the driver and experience of ride in the cab ..\ul\fs36\par
+
+\pard\sa200\sl276\slmult1\par
+\ulnone\fs28\par
+\par
+\tab\fs24\tab\tab\par
+\ul\fs40\par
+\par
+\ulnone\fs22\par
+}
+ 
